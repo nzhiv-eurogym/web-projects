@@ -16,14 +16,15 @@
                 background-color: rgb(155, 207, 168);
                 text-align: center;
             }
-            
-            .tbilisi {
-                background-color: rgb(195, 224, 206);
-                
+            a {
+            text-decoration: none; /* Убрать стандартное подчеркивание */
+            border-bottom: 1px dotted #007bff; /* Добавить пунктирную линию */
+            color: #007bff; /* Цвет текста ссылки (может быть изменен) */
+            transition: border-bottom 0.3s ease; /* Плавный переход для линии */
             }
-            
-            .borjomi {
-                background-color: rgb(195, 235, 176);
+
+            a:hover {
+            border-bottom: 1px solid #007bff; /* Сплошная линия при наведении */
             }
         </style>
     </head>
