@@ -45,13 +45,35 @@
       align-items: center;
     }
 
+    img {
+      max-width: 95%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+
+      height: auto;
+      transition: transform 0.3s ease; /* Добавляем плавный переход при изменении transform */
+    }
+
+    #logo-container img {
+      margin: 10px;
+      max-width: 90%;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease; /* Добавляем плавный переход при изменении transform */
+    }
+
+    .container:hover img {
+      transform: scale(1.1); /* Увеличение изображения при наведении */
+    } 
 
     .container1 {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 6px;
       overflow: hidden;
-      /*background-color: #4E4D5C;*/
       background-color: rgba(78, 77, 92, 0.2);
     }
 
@@ -91,18 +113,6 @@
       padding: 20px;
       height: 100%;
     }
-
-    img {
-      max-width: 95%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    #logo-container img {
-      margin: 10px;
-      max-width: 90%;
-    }
   </style>
 </head>
 
@@ -110,7 +120,9 @@
 
   <header>
     <div id="logo-container">
-      <img src="logo.png">
+      <div class="container">
+        <img src="logo.png">
+      </div>
     </div>
   </header>
 
@@ -118,11 +130,13 @@
 
   <div class="container1">
     <div class="left-column">
+      <div class="container">
       <a href="https://komarutopxcoding.github.io/Summative-2_GubarLeo/">
       <img src="cafe-website.png" alt="Сайт Лёни"></a>
+      </div>
     </div>
     <div class="right-column">
-      <p> Лёня. 
+      <p> Лёня Губарь. Сайт о кафе, в котором есть коты, собаки и ежи. 
         <a href="https://komarutopxcoding.github.io/Summative-2_GubarLeo/">Посмотреть</a>
       </p>
     </div>
