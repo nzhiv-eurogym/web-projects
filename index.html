@@ -37,9 +37,40 @@
             text-align: center;
           }
 
+
+            .container {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #e0e0e0;
+          }
+
+          .left-column {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            height: 100%;
+          }
+
+          .right-column {
+            float: right;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            height: 100%;
+          }
+
+          img {
+              max-width: 100%;
+              height: auto;
+              display: block;
+              margin: 0 auto;
+          }
+        
           #logo-container img {
             margin-right: 10px;
-            max-width: 100%;
+            max-width: 60%;
           }
         </style>
     </head>
@@ -50,9 +81,20 @@
          <img src="logo.svg">
           </div>
         </header>
+        
     
         <h1>CS/Design projects</h1>
-        <h2><a href="https://nzhiv-eurogym.github.io/webpages/travel-blog.html">Travel blog</a></h2>
-        <h2><a href="https://nzhiv-eurogym.github.io/recipe-book/">Recipe book</h2>
+
+        <div class="container">
+        <div class="left-column">
+            <img src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" alt="Cat">
+        </div>
+        <div class="right-column">
+          <p> Автор проекта и краткое описание
+          <a href="https://nzhiv-eurogym.github.io/webpages/travel-blog.html">Посмотреть</a>
+          </p>
+        </div>
+      </div>
+      </div>
     </body>
 </html>
