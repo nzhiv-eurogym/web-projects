@@ -3,182 +3,55 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" type="image/x-icon" href="eg-logo.svg">
-
   <title>CS Projects</title>
-  <style>
-    h1 {
-      color: #2D4654;
-    }
-
-    h2 {
-      color: #2D4654;
-    }
-
-    body {
-      background-color: #87BCDE;
-      text-align: center;
-    }
-
-    a {
-      text-decoration: none;
-      /* Убрать стандартное подчеркивание */
-      border-bottom: 1px dotted #007bff;
-      /* Добавить пунктирную линию */
-      color: #008000;
-      /* Цвет текста ссылки (может быть изменен) */
-      transition: border-bottom 0.3s ease;
-      /* Плавный переход для линии */
-    }
-
-    a:hover {
-      border-bottom: 1px solid #007bff;
-      /* Сплошная линия при наведении */
-    }
-
-    #logo-container {
-      /*justify-content: center;
-                margin-bottom: 20px;
-                display: flex; */
-      margin: 0 auto;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    img {
-      max-width: 95%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-
-      height: auto;
-      transition: transform 0.3s ease; /* Добавляем плавный переход при изменении transform */
-    }
-
-    #logo-container img {
-      margin: 10px;
-      max-width: 90%;
-    }
-
-    .container img {
-      width: 80%;
-      height: auto;
-      transition: transform 0.3s ease; /* Добавляем плавный переход при изменении transform */
-    }
-
-    .container:hover img {
-      transform: scale(1.1); /* Увеличение изображения при наведении */
-    } 
-
-    .container1 {
-      width: 70%;
-      margin: 0 auto;
-      margin-bottom: 6px;
-      overflow: hidden;
-      background-color: rgba(78, 77, 92, 0.2);
-    }
-
-    .container2 {
-      width: 70%;
-      margin: 0 auto;
-      margin-bottom: 6px;
-      overflow: hidden;
-      background-color: rgba(36, 59, 74, 0.2);
-    }
-
-    .container3 {
-      width: 70%;
-      margin: 0 auto;
-      margin-bottom: 6px;
-      overflow: hidden;
-      background-color: rgba(128, 94, 115, 0.2);
-    }
-
-    .container4 {
-      width: 70%;
-      margin: 0 auto;
-      margin-bottom: 6px;
-      overflow: hidden;
-      background-color: rgba(78, 77, 92, 0.2);
-    }
-
-    .left-column {
-      float: left;
-      width: 50%;
-      box-sizing: border-box;
-      padding: 20px;
-      height: 100%;
-    }
-
-    .right-column {
-      float: right;
-      width: 50%;
-      box-sizing: border-box;
-      padding: 20px;
-      height: 100%;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
   <header>
-    <div id="logo-container">
-       <img src="logo.png">
+    <div class="container">
+      <img src="logo.png">
     </div>
+    <nav>
+      <ul>
+        <li><a href="#projects_6th_grade" class="button">6th grade web-pages</a></li>
+        <li><a href="#projects_8th_grade" class="button">8th grade web-applications</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <h2>6th grade web-pages</h2>
+  <h2 id="projects_6th_grade">6th grade web-pages</h2>
 
-  <div class="container1">
+  <div class="container container1">
     <div class="left-column">
-      <div class="container">
       <a href="https://komarutopxcoding.github.io/Summative-2_GubarLeo/">
-      <img src="cafe-website.png" alt="Сайт Лёни"></a>
-      </div>
+        <img src="cafe-website.png" alt="Сайт Лёни">
+      </a>
     </div>
     <div class="right-column">
-      <p> Лёня Губарь. Сайт о кафе, в котором есть коты, собаки и ежи. 
-        <a href="https://komarutopxcoding.github.io/Summative-2_GubarLeo/">Посмотреть</a>
+      <p> Лёня Губарь. Сайт о кафе, в котором есть коты, собаки и ежи.
+        <a href="https://komarutopxcoding.github.io/Summative-2_GubarLeo/" class="button">Посмотреть</a>
       </p>
     </div>
-    
+
   </div>
-  <div class="container2">
+
+  <div class="container container2">
     <div class="left-column">
       <img src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" alt="Cat">
     </div>
     <div class="right-column">
       <p> Автор проекта и краткое описание
-        <a href="https://nzhiv-eurogym.github.io/webpages/travel-blog.html">Посмотреть</a>
+      <a href="https://nzhiv-eurogym.github.io/webpages/travel-blog.html" class="button">Посмотреть</a>
       </p>
     </div>
   </div>
 
-  <h2>8th grade web-applications</h2>
+  <h2 id="projects_8th_grade">8th grade web-applications</h2>
 
-  <div class="container3">
+  <div class="container container3">
     <div class="left-column">
       <img src="https://www.shutterstock.com/image-photo/happy-puppy-welsh-corgi-14-600nw-2270841247.jpg" alt="Cat">
     </div>
     <div class="right-column">
-      <p> Автор проекта и краткое описание
-        <a href="https://nzhiv-eurogym.github.io/webpages/travel-blog.html">Посмотреть</a>
-      </p>
-    </div>
-  </div>
-  <div class="container4">
-    <div class="left-column">
-      <img src="https://www.shutterstock.com/image-photo/happy-puppy-welsh-corgi-14-600nw-2270841247.jpg" alt="Cat">
-    </div>
-    <div class="right-column">
-      <p> Автор проекта и краткое описание
-        <a href="https://nzhiv-eurogym.github.io/webpages/travel-blog.html">Посмотреть</a>
-      </p>
-    </div>
-  </div>
-</body>
-
-</html>
+   
