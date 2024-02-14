@@ -1,0 +1,96 @@
+h1,
+h2 {
+  color: #2D4654;
+}
+
+body {
+  background-color: #87BCDE;
+  text-align: center;
+}
+
+.container1 {
+  background-color: rgba(78, 77, 92, 0.2);
+}
+
+.container2 {
+  background-color: rgba(36, 59, 74, 0.2);
+}
+
+.container3 {
+  background-color: rgba(128, 94, 115, 0.2);
+}
+
+.container4 {
+  background-color: rgba(78, 77, 92, 0.2);
+}
+
+.container {
+  display: flex; /* Расположение внутренних элементов в строку */
+  width: 70%;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* Распределение доступного пространства между .left-column и .right-column */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.right-column p {
+  margin-top: 0; /* Убираем верхний отступ у первого абзаца внутри .right-column */
+}
+
+img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.container:hover img {
+  transform: scale(1.1);
+}
+
+/* Стили для кнопок */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4B96D1;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #006abf;
+}
+
+/* Убираем маркеры у списка */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Расположение элементов в ряд */
+nav ul li {
+  display: inline;
+  margin: 10px; /* Расстояние между кнопками */
+}
+
+.container .button {
+  padding: 8px 16px; /* Уменьшаем отступы кнопки */
+  margin-top: 10px; /* Добавляем отступ сверху */
+  margin-bottom: 10px; /* Добавляем отступ снизу */
+}
